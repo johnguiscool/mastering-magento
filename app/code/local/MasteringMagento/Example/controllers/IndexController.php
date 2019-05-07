@@ -4,6 +4,8 @@ class MasteringMagento_Example_IndexController extends Mage_Core_Controller_Fron
 {
     public function indexAction()
     {
-        echo 'Hello, World!';
+        $this->loadLayout();
+
+        return $this->renderLayout();
     }
 }
